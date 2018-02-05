@@ -128,10 +128,6 @@ table.dataTable.no-footer{
     margin: 9px 0 0 11px;
 }
 
-/* bootstrap4- hack*/
-.hack-datepicker{
-    background: url("../img/calendar-icon.svg");
-}
 
 /* bootstrap4*/
 

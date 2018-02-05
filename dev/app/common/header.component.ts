@@ -6,11 +6,13 @@ import { Router } from '@angular/router';
     templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
-
+    public logo:string;
     public realname  : string ;
     public open :boolean = false;
     constructor(private router:Router,private toggle:toggleSidebarService, private cookie:CookieService){
         this.realname = cookie.getCookie("username");
+        this.logo = require("./../../assets/img/logo.png");
+
     }
     toggleSidebar(e){
         let $body = $("body");
