@@ -1,0 +1,39 @@
+{
+    "data":[
+        {
+            "menuImage": "fa-user fa fw",
+            "menuName": "用户管理",
+            "menuid": 1871,
+            "resUrl": null,
+            "resName": null,
+            "childMenus": [
+                {
+                    "menuImage": null,
+                    "menuName": null,
+                    "menuid": null,
+                    "resUrl": "/users-permission",
+                    "resName": "角色权限设置",
+                    "childMenus": null
+                },
+                {
+                    "menuImage": null,
+                    "menuName": null,
+                    "menuid": null,
+                    "resUrl": "/users-normalUsers",
+                    "resName": "普通用户（白帽子）",
+                    "childMenus": null
+                },
+                {
+                    "menuImage": null,
+                    "menuName": null,
+                    "menuid": null,
+                    "resUrl": "/users-operators",
+                    "resName": "运营人员",
+                    "childMenus": null
+                }
+            ]
+        }
+    ],
+    "msg":"",
+    "success":true
+}

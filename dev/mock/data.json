@@ -1,0 +1,49 @@
+{
+    "data":[
+        {
+            "id": 860,
+            "firstName": "Superman",
+            "lastName": "Yoda",
+            "mobile":"15811279634",
+            "nickname":"哈士奇",
+            "team":"天团",
+            "email":"00000@qq.com",
+            "points":100,
+            "freezePoints":88,
+            "availablePoints":12,
+            "registerTime":1517473724623,
+            "loginTime":1517473724623
+        },
+        {
+            "id": 870,
+            "firstName": "Foo",
+            "lastName": "Whateveryournameis",
+            "mobile":"15811279634",
+            "nickname":"哈士奇",
+            "team":"天团",
+            "email":"00000@qq.com",
+            "points":100,
+            "freezePoints":88,
+            "availablePoints":12,
+            "registerTime":1517473724623,
+            "loginTime":1517473724623
+        },
+        {
+            "id": 590,
+            "firstName": "Toto",
+            "lastName": "Titi",
+            "mobile":"15811279634",
+            "nickname":"哈士奇",
+            "team":"天团",
+            "email":"00000@qq.com",
+            "points":100,
+            "freezePoints":88,
+            "availablePoints":12,
+            "registerTime":1517473724623,
+            "loginTime":1517473724623
+        }
+    ],
+    "total":100,
+    "msg":"",
+    "success":true
+}

@@ -1,0 +1,23 @@
+
+<div header-component class="page-header navbar navbar-fixed-top"></div>
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse">
+            <div sidebar-component ></div>
+        </div>
+    </div>
+
+
+    <div class="page-content-wrapper">
+        <div class="page-content">
+
+            <div class="fade-in-up">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:;" class="page-quick-sidebar-toggler"><i class="icon-close"></i></a>
+    <div data-ng-include="'apps/tpl/quick-sidebar.html'" data-ng-controller="QuickSidebarController" class="page-quick-sidebar-wrapper"></div>
+</div>
+<div footer-component class="page-footer"></div>

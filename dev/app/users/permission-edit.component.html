@@ -1,0 +1,35 @@
+<div>
+    <h3 class="page-title">
+        角色权限设置
+    </h3>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-lg-6 col-xs-6">
+                    <span class="panel-heading-title">权限设置</span>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <a href="javascript:;" class="btn btn-primary btn-sm"  id="saveBtn" (click)="submit()">提交</a>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row" *ngFor="let item of list;">
+
+                <div class="col-md-8 col-xs-12 col-md-push-2">
+                    <div class="checkbox-box pull-left">
+                        <label (change)="toggleSelect(item, $event)"><input type="checkbox"><i></i> {{item.name}} </label>
+                    </div>
+                    <button type="button" class="btn btn-xs btn-primary pull-left edit-permission-btn" (click)="toggle(item)"><i class="fa" [class.fa-caret-down]="item.isFold == false" [class.fa-caret-up]="item.isFold == true" style="vertical-align: text-top"></i></button>
+                </div>
+                <div class="col-md-8 col-xs-12 col-md-push-2" [ngStyle]="{'display':item.isFold === true ? 'none' : 'block' }">
+                    <div class="checkbox-box indent2">
+                        <label *ngFor="let subItem of item.subList"><input type="checkbox" [checked]="subItem.value" (change)="subItem.value = subItem.value == 0 ? 1 :0"><i></i> {{subItem.name}} </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

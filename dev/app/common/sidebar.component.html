@@ -1,0 +1,14 @@
+<ul class="page-sidebar-menu" [class.page-sidebar-menu-closed]="isHide == true">
+    <li class="bigmenu" *ngFor="let item of menuList; let i = index" [class.active]="isActive == i" [class.open]="(isActive == i) || (current == i)">
+            <a href="javascript:void(0)" (click)="toggleFold(item, i)">
+                <i class="{{item.menuImage}}"></i>
+                <span class="title ">{{item.menuName}}</span>
+                <span class="arrow" [class.open]="item.isFold != true"></span>
+            </a>
+        <ul class="sub-menu" [ngStyle]="{'display':item.isFold === true ? 'none' : 'block' }">
+            <li *ngFor="let subItem of item.childMenus; let j = index" [class.active]="(isActive == i) && (subIsActive == j)">
+                <a routerLink="{{subItem.resUrl}}" (click)="active(i, j)">{{subItem.resName}}</a>
+            </li>
+         </ul>
+    </li>
+</ul>

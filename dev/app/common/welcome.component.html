@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="dashboard-stat blue-madison">
+            <div class="visual">
+                <i class="fa fa-comments"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    {{bugs}}
+                </div>
+                <div class="desc">
+                    本周漏洞个数
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="dashboard-stat red-intense">
+            <div class="visual">
+                <i class="fa fa-bar-chart-o"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    {{register}}
+                </div>
+                <div class="desc">
+                    注册白帽子数量
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="dashboard-stat green-haze">
+            <div class="visual">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    {{sum}}
+                </div>
+                <div class="desc">
+                    总计
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-lg-6">
+        <div echarts [options]="lineOption" class="echartsStyle"></div>
+    </div>
+    <div class="col-lg-6">
+        <div echarts [options]="pieOption" class="echartsStyle"></div>
+    </div>
+</div>
